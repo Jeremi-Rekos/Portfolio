@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="PL-pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="Style.css" />
+    <title>Jeremi Rękoś</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="navs nav-left">
+        <h1> <a href="#"> Jeremi's Portfolio</a></h1>
+      </div>
+      <div class="navs nav-right">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#photo-break">Portfolio</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="hamburger">
+        <button id="menuButt" class="ham-inner">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </button>
+      </div>
+    </header>
+    <div id="slideMenu" class="menu">
+      <button id="exitButt" class="exit-menu">
+        <img class="exitButt" src="zdj/close.png" alt="" />
+      </button>
+      <ul>
+        <li class="test" ><a href="#about">About</a></li>
+        <li class="test" ><a href="#photo-break">Portfolio</a></li>
+        <li class="test" ><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <main>
+      <div class="background-top"></div>
+      <div id="about" class="about">
+        <div class="boxes" id="flip-card-1" onclick="flipCard('flip-card-1')">
+          <div class="boxes-inner">
+            <div class="box-front box-me"><p>About Me</p><img class="tap" src="zdj/tap.png" alt=""></div>
+            <div class="box-back back-me">
+              <p>
+                My name is Jeremi, and I'm 21 years old. I completed my
+                technical high school education with a specialization in
+                Information Technology under the patronage of MSI. I attended
+                Teb Edukacja in Leszno, where I successfully passed the
+                information technology exams (INF03) with an overall score of
+                90%.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="boxes" id="flip-card-2" onclick="flipCard('flip-card-2')">
+          <div class="boxes-inner">
+            <div class="box-front box-job"><p>My Skills</p><img class="tap" src="zdj/tap.png" alt=""></div>
+            <div class="box-back back-job"> 
+              <div class="html-info skill"><h2>HTML</h2><p>This is one of first programing language I learned. I write clear and easy to read code.</p></div>
+              <div class="css-info skill"><h2>CSS</h2><p>This is also one of first programing language I learned. I know many useful functions of this language. </p></div>
+              <div class="js-info skill"><h2>JavaScript</h2><p>I know clear JS very good in work with it albo I started learning frameworks and libraries.</p></div>
+              <div class="react-info skill"><h2>React.js</h2><p>I started learning this framework recently and I going very well. I'm open to new challenges and problems. </p></div>
+              <div class="php-info skill"><h2>PHP and SQL</h2><p>I used PHP and SQL at school to pass all exams (inf.02/03). So I know this languages but to work with them I will need a reminder. </p></div>
+              <div id="more-info" class="skill"><h2>More....</h2><p>I think they will be soon.</p></div>
+            </div>
+          </div>
+        </div>
+        <div class="boxes" id="flip-card-3" onclick="flipCard('flip-card-3')">
+          <div class="boxes-inner">
+            <div class="box-front box-freeTime"><p>My Experience</p><img class="tap" src="zdj/tap.png" alt=""></div>
+            <div class="box-back back-freeTime">
+              <p>
+                Since January 2020, I have been working part-time at Brenor, and
+                as of January 2023, I transitioned to a permanent position as a
+                Frontend Developer. In my role, I am responsible for managing
+                the company's website, creating templates for eBay auctions, and
+                overseeing the German counterpart of the website on Google Ads.
+                Since March 2024, I have been working on the ERP system "Monitor
+                ERP".
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="boxes" id="flip-card-4" onclick="flipCard('flip-card-4')">
+          <div class="boxes-inner">
+            <div class="box-front box-drop"><p>My Hobbies</p><img class="tap" src="zdj/tap.png" alt=""></div>
+            <div class="box-back back-drop">
+              <p>
+                In my free time, I enjoy reading science books or going for a
+                run. I am currently teaching myself Spanish.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="photo-break" class="photo-break"></div>
+      <div  class="portfolio">
+        <div id="project1" class="project-one projects">
+          <div class="p1-left">
+            <img id="img1" src="zdj/Image1.png" onclick="openLightbox(1)" />
+          </div>
+          <div class="p1-right">
+            <div class="textBox">
+              <h1 class="proj-title">eBay Tamplate</h1>
+              <div class="desc">
+                <p>
+                  My first project for the company Brenor. The task was to make
+                   a template for every eBay auction for sinks and others. The 
+                   template was made for my colleague from the sales office to 
+                   easily change data, for every auction.
+                </p>
+                <p>
+                  Mój pierwszy projekt dla firmy Brenor. Zadanie polegało na wykonaniu szablonu na każdą aukcję w serwisie eBay na zlewozmywaki i inne. Szablon został stworzony z myślą o moich kolegach z biura sprzedaży, aby mogli łatwo zmieniać dane, dla każdej aukcji.
+                </p>
+              </div>
+              <button class="gitLink"><a href="https://github.com/Jeremi-Rekos/ebay-template">Open in Github</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="project-two projects">
+          <div class="p2-right">
+            <div class="textBox">
+              <h1 class="proj-title">Pole Namiotowe</h1>
+              <div class="desc">
+                <p>
+                  As a freelance web developer, I designed a website for a camping
+                   ground. The website is full RWD I  made a simple and easy 
+                   information web. After a few changes, this project will be online 
+                   soon. 
+                </p>
+                <p>
+                  Jako freelancer zaprojektowałem stronę internetową dla pola 
+                  kempingowego. Strona jest w pełnym formacie RWD. Zrobiłem prostą i
+                   łatwą w obsłudze stronę informacyjną dla potencjalnych klientów. Po
+                    kilku zmianach projekt wkrótce będzie dostępny online.
+                </p>
+              </div>
+              <button class="gitLink gitcampButton"><a href="https://github.com/Jeremi-Rekos/Pole-Namiotowe">Open in Github</a></button>
+            </div>
+          </div>
+          <div class="p2-left">
+            <img id="img2" src="zdj/Image2.png" onclick="openLightbox(2)" />
+          </div>
+        </div>
+        <div class="project-tree projects">
+          <div class="p3-left"><img src="zdj/church(copy).jpg " alt="" /></div>
+          <div class="p3-right">
+            <div class="textBox">
+              <h1 class="proj-title">Portfolio</h1>
+              <div class="desc">
+                <p>
+                  This portfolio is my latest project, which I also created in full RWD
+                   format and using various Javascript functions. This project will be constantly updated as my skills progress.
+                </p>
+                <p>
+                  To portfolio jest moim najnowszym projektem który wykonałem również w
+                  pełnym formacie RWD jak i z użyciem róznych funkcji w Javascript. Ten projekt będzię
+                  na bieżąco aktualizowany wraz z postepem moich umiejętnosci
+                </p>
+              </div>
+              <button class="gitLink gitPortfolioButton"><a href="#">Open in Github</a></button>
+            </div>
+          </div>
+        </div>
+        <div class="soon"><p>More pojects soon...</p></div>
+        <div class="lightbox" id="lightbox">
+          <span class="close" onclick="closeLightbox()"
+            ><img class="closeIMG" src="zdj/close.png"
+          /></span>
+          <img id="lightbox-img" class="lightbox-img" src="" alt="" />
+        </div>
+      </div>
+      <div id="contact" class="contact">
+        <div class="contactBox">
+          <h1>Contact Me!</h1>
+          <p>Tel. 572 123 002</p>
+          <p>E-mail:    <a href="mailto:rekos.jeremi@gmail.com">rekos.jeremi@gmial.com</a></p>
+          <p>Github: <a href="https://github.com/Jeremi-Rekos">Jeremi-Rekos</a></p>
+          <p>LinkedIn: <a href="https://www.linkedin.com/in/jeremi-r%C4%99ko%C5%9B-09a467250/">Jeremi Rękoś</a></p>
+        </div>
+        <a href="#"><div class="goTop"><h2>Go Top</h2></div></a>
+      </div>
+    </main>
+
+    <footer></footer>
+    <script src="Main.js"></script>
+  </body>
+</html>
