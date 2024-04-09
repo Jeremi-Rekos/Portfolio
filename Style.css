@@ -204,9 +204,12 @@ main {
 .boxes-inner {
   position: relative;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
+  -webkit-box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.295);
   height: 460px;
   width: 700px;
   margin: 40px;
+  -webkit-transition: transform 0.6s;
+  -webkit-transform-style: preserve-3d;
   transition: transform 0.6s;
   transform-style: preserve-3d;
   cursor: pointer;
@@ -223,6 +226,7 @@ main {
   top: 60%;
   height: 40px;
   animation: tapColor 2s infinite linear;
+  -webkit-animation: tapColor 2s infinite linear;
 }
 .boxes-inner > * {
   max-width: 100%;
@@ -231,13 +235,16 @@ main {
 .box-front,
 .box-back {
   position: absolute;
+  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border: 5px solid black;
   height: 460px;
   width: 700px;
+transform: rotateX(0deg)
 }
 .box-back {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
   z-index: 10;
   display: flex;
   justify-content: center;
@@ -250,6 +257,7 @@ main {
 }
 .boxes.flipped .boxes-inner {
   transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
 }
 .boxes-inner p {
   z-index: 3;
