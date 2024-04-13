@@ -21,7 +21,7 @@ function slideDown() {
 function slideUp() {
   menu.classList.add("animation2");
   menu.classList.remove("animation1");
-  menu.style.top = "-100%";
+  menu.style.top = "-200%";
 }
 hambutt.forEach(function(single) {
     single.addEventListener('click', slideUp);
