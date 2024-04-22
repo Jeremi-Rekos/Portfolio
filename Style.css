@@ -794,23 +794,24 @@ main {
   .skill p{
     font-size: 10px!important;
   }
-  @media (min-width: 1900px){
-    .about::before{
-      transform: rotate(88deg);
-      height: 3000px;
-      left: 50%;
-    top: -112%;
-    }
-    .boxes-inner{
-      height: 460px;
-      width: 800px;
   
-    }
-    .box-front,
-  .box-back {
+}
+@media (min-width: 1900px){
+  .about::before{
+    transform: rotate(88deg);
+    height: 3000px;
+    left: 50%;
+  top: -112%;
+  }
+  .boxes-inner{
+    height: 460px;
     width: 800px;
+
   }
-  }
+  .box-front,
+.box-back {
+  width: 800px;
+}
 }
 .animation1 {
   animation: slide1 0.5s linear;
